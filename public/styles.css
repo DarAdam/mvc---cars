@@ -1,0 +1,27 @@
+nav {
+	background-color: lightblue;
+
+}
+
+ul {
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+
+}
+li {
+	display: inline-block;
+}
+li a {
+	display: block;
+	padding: 1em;
+	text-decoration: none;
+	color: white;
+}
+li a:hover {
+	background-color: blue;
+	color: white;
+}
+.active {
+	background-color: black;
+}

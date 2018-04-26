@@ -1,0 +1,25 @@
+<?php 
+
+$action = $this->getAction();
+
+ ?>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="/mvc/public/styles.css">
+	<title><?php echo isset($this->page_title) ? $this->page_title : 'Welcome to my site' ?></title>
+</head>
+<body>
+
+<nav>
+	<ul>
+		<li><a href="/mvc/public/home/index" <?php echo ($action == 'index') ? 'class="active"' : ''?>>Home</a></li>
+		<li><a href="/mvc/public/home/aboutUs"<?php echo ($action == 'aboutUs') ? 'class="active"' : ''?>>AboutUs</a></li>
+		<li><a href="/mvc/public/home/contact"<?php echo ($action == 'contact') ? 'class="active"' : ''?>>Contact</a></li>
+		<li><a href="/mvc/public/home/gallery"<?php echo ($action == 'gallery') ? 'class="active"' : ''?>>Gallery</a></li>
+		<li><a href="/mvc/public/car/index"<?php echo ($action == 'car') ? 'class="active"' : ''?>>Cars</a></li>
+	</ul>
+</nav>
+
